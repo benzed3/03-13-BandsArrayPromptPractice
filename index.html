@@ -13,14 +13,14 @@
 
     <script type="text/javascript">
 
-        var bands = ["Radiohead", "Coldplay", "Stone Temple Pilots", "The Beatles"];
+        var bands = ["radiohead", "coldplay", "stone temple Pilots", "the beatles"];
 
         var confirmBand = prompt("What is your favorite band?");
         //Set to lower case; it is case sensitive//
-
+        var confirmBandLower = confirmBand.toLowerCase();
 
         //Here you set the index lower than 0 since the array has nothing less than 0//
-        if (bands.indexOf(confirmBand) === -1) {
+        if (bands.indexOf(confirmBandLower) === -1) {
             alert("Nah they suck!!");
         }
 
