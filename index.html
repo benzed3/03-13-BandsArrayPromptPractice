@@ -15,9 +15,18 @@
 
         var bands = ["Radiohead", "Coldplay", "Stone Temple Pilots", "The Beatles"];
 
-        var favBand = prompt("What is your favorite band?");
+        var confirmBand = prompt("What is your favorite band?");
+        //Set to lower case; it is case sensitive//
 
-        alert(favBand);
+
+        //Here you set the index lower than 0 since the array has nothing less than 0//
+        if (bands.indexOf(confirmBand) === -1) {
+            alert("Nah they suck!!");
+        }
+
+        else {
+            alert("I love them!");
+        }
 
     </script>
 
